@@ -9,7 +9,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment:scroll;
-    background-size: 100% auto;
+    background-size: auto auto;
     overflow: hidden;
     animation-name: changeBg;
     animation-duration: 30s;
