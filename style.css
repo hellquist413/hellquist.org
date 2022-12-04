@@ -3,13 +3,11 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     justify-content: center;
-    width: auto;
     height: 100vh;
     background-image: url("img/kolorado_Festival2.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment:scroll;
-    background-size: auto auto;
+    background-size: cover;
     overflow: hidden;
     animation-name: changeBg;
     animation-duration: 30s;
