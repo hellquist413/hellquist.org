@@ -13,6 +13,14 @@ body {
     .links >.middle {
         display: block !important;
     }
+
+    .bg1 {
+        background-position: center !important;
+    }
+    
+    .bg2 {
+        background-position: center !important;
+    }
 }
 
 .placeholder {
@@ -32,7 +40,7 @@ body {
     width: 100%;
     background-image: url("img/kolorado_Festival2.jpg");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: -100px;
     background-size: cover;
     animation-name: changeBg;
     animation-duration: 30s;
@@ -49,7 +57,7 @@ body {
     width: 100%;
     background-image: url("img/kolorado_Festival1.jpg");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: -500px;
     background-size: cover;
     animation-name: changeBg2;
     animation-duration: 30s;
