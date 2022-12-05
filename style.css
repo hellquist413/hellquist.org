@@ -46,6 +46,7 @@ body {
     background-repeat: no-repeat;
     background-position: -100px;
     background-size: cover;
+    animation: forwards;
     animation-name: changeBg;
     animation-duration: 30s;
     animation-iteration-count: infinite;
@@ -63,6 +64,7 @@ body {
     background-repeat: no-repeat;
     background-position: -600px;
     background-size: cover;
+    animation: forwards;
     animation-name: changeBg2;
     animation-duration: 30s;
     animation-iteration-count: infinite;
@@ -80,6 +82,7 @@ body {
     background-repeat: no-repeat;
     background-position: -300px;
     background-size: cover;
+    animation: forwards;
     animation-name: changeBg3;
     animation-duration: 30s;
     animation-iteration-count: infinite;
