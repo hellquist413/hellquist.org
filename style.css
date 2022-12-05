@@ -21,6 +21,10 @@ body {
     .bg2 {
         background-position: center !important;
     }
+
+    .bg3 {
+        background-position: center !important;
+    }
 }
 
 .placeholder {
@@ -63,6 +67,23 @@ body {
     animation-duration: 30s;
     animation-iteration-count: infinite;
     -moz-animation: changeBg2 30s infinite;
+}
+
+.bg3 {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background-image: url("img/psy_pa_tippen.jpg");
+    background-repeat: no-repeat;
+    background-position: -600px;
+    background-size: cover;
+    animation-name: changeBg3;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    -moz-animation: changeBg3 30s infinite;
 }
 
 .links {
@@ -145,7 +166,11 @@ body {
         opacity: 100%;
     }
 
-    50% {
+    33% {
+        opacity: 0%;
+    }
+
+    66% {
         opacity: 0%;
     }
 
@@ -159,8 +184,30 @@ body {
         opacity: 0%;
     }
 
-    50% {
-        opacity: 1000%;
+    33% {
+        opacity: 100%;
+    }
+
+    66% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 0%;
+    }
+}
+
+@keyframes changeBg3 {
+    0% {
+        opacity: 0%;
+    }
+
+    33% {
+        opacity: 0;
+    }
+
+    66% {
+        opacity: 100%;
     }
 
     100% {
