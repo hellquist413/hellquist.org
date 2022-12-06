@@ -80,7 +80,7 @@ body {
     width: 100%;
     background-image: url("img/psy_pa_tippen.jpg");
     background-repeat: no-repeat;
-    background-position: -300px;
+    background-position: -400px;
     background-size: cover;
     animation: forwards;
     animation-name: changeBg3;
