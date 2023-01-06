@@ -12,6 +12,19 @@ body {
 @media only screen and (min-width: 650px) {
     .links>.middle {
         display: block !important;
+        width: fit-content;
+    }
+
+    .middle {
+        width: fit-content;
+    }
+
+    .placeholder {
+        width: 10px;
+    }
+
+    .middle a {
+        max-width: 10%;
     }
 
     .bg1 {
@@ -23,6 +36,10 @@ body {
     }
 
     .bg3 {
+        background-position: center !important;
+    }
+
+    .bg4 {
         background-position: center !important;
     }
 }
@@ -89,20 +106,22 @@ body {
     -moz-animation: changeBg3 30s infinite;
 }
 
-.background {
+.bg4 {
     position: absolute;
-    background-position: center;
-    background-size: cover;
-    background-image: url("img/kolorado_Festival2.jpg");
+    padding: 0;
+    margin: 0;
+    z-index: 1;
     height: 100%;
     width: 100%;
-    transition: 0.5s linear;
-}
-#background {
-    -webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
-    -o-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
+    background-image: url("img/hellquist_modem_2022.jpg");
+    background-repeat: no-repeat;
+    background-position: -400px;
+    background-size: cover;
+    animation: forwards;
+    animation-name: changeBg4;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    -moz-animation: changeBg4 30s infinite;
 }
 
 .links {
@@ -185,11 +204,15 @@ body {
         opacity: 100%;
     }
 
-    33% {
+    25% {
         opacity: 0%;
     }
 
-    66% {
+    50% {
+        opacity: 0%;
+    }
+
+    75% {
         opacity: 0%;
     }
 
@@ -203,11 +226,15 @@ body {
         opacity: 0%;
     }
 
-    33% {
+    25% {
         opacity: 100%;
     }
 
-    66% {
+    50% {
+        opacity: 0%;
+    }
+
+    75% {
         opacity: 0%;
     }
 
@@ -221,11 +248,37 @@ body {
         opacity: 0%;
     }
 
-    33% {
+    25% {
         opacity: 0;
     }
 
-    66% {
+    50% {
+        opacity: 100%;
+    }
+
+    75% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 0%;
+    }
+}
+
+@keyframes changeBg4 {
+    0% {
+        opacity: 0%;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0%;
+    }
+
+    75% {
         opacity: 100%;
     }
 
