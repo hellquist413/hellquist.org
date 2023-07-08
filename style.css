@@ -7,6 +7,7 @@ body {
     align-items: center;
     height: 100vh;
     width: 100vw;
+    text-decoration: none !important;
 }
 
 @media only screen and (min-width: 770px) {
@@ -188,6 +189,28 @@ body {
     -moz-user-select: text;
     -o-user-select: text;
     user-select: text;
+}
+
+.logo-container {
+    position: relative;
+}
+
+.logo-text {
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+    color: rgb(199, 199, 199);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.logo-container:hover .logo-text {
+    opacity: 1;
+    transform: translateY(-95px);
+
 }
 
 @keyframes fadein {
