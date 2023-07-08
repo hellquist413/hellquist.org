@@ -9,10 +9,12 @@ body {
     width: 100vw;
 }
 
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 770px) {
     .links>.middle {
         display: block !important;
         width: fit-content;
+        width: 120px;
+
     }
 
     .middle {
@@ -42,6 +44,12 @@ body {
     .bg4 {
         background-position: center !important;
     }
+}
+
+.content {
+    position: absolute;
+    padding: 0;
+    margin: 0;
 }
 
 .placeholder {
@@ -134,6 +142,7 @@ body {
     animation-name: fadein;
     animation-duration: 5s;
     top: 50%;
+    
 }
 
 .links>.middle {
@@ -152,6 +161,8 @@ body {
     height: 64px;
     position: relative;
     align-items: center;
+    transition: transform .2s; /* Animation */
+
     padding: 30px;
     opacity: 50%;
 }
@@ -159,7 +170,8 @@ body {
 .logo:hover {
     opacity: 100%;
     animation-name: fadein_logo;
-    animation-duration: 1s;
+    animation-duration: 0.4s;
+    transform: scale(1.2);
 }
 
 .selectDisable {
@@ -177,7 +189,6 @@ body {
     -o-user-select: text;
     user-select: text;
 }
-
 
 @keyframes fadein {
     0% {
