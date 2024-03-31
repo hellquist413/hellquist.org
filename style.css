@@ -61,6 +61,22 @@ body {
     align-items: center;
 }
 
+.headermail {
+    position:absolute;
+    width: 300px;
+    background-color: black;
+    color: white;
+    z-index: 5;
+    top: 0px;
+    padding:  5px;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.25rem;
+    left: 50%;
+    margin-left: -150px;
+}
+
 .bg1 {
     position: absolute;
     padding: 0;
