@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Hellquist digital arts & electronic music." />
+    <meta name="description" content="Hellquist . Electronic Music & Digital Art" />
     <title>Hellquist.org</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
@@ -13,33 +13,48 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-    
+
+    <div class="contact"></div>
     <div class="placeholder">
         <div class="links">
             <div class="middle selectDisable">
                 <a href="https://soundcloud.com/hellquist" target="_blank" class="logo-container">
-                    <img src="img/logos/soundcloud.png" class="logo" height="64" width="64"><div class="logo-text">SoundCloud</div></a> 
+                    <img src="img/logos/soundcloud.png" class="logo" height="64" width="64">
+                    <div class="logo-text">SoundCloud</div>
+                </a>
 
                 <a href="https://hellquist.bandcamp.com" target="_blank" class="logo-container">
-                    <img src="img/logos/bandcamp-button-bc-circle-whitecolor-64.png" class="logo" height="64" width="64"><div class="logo-text">Bandcamp</div></a>
+                    <img src="img/logos/bandcamp-button-bc-circle-whitecolor-64.png" class="logo" height="64"
+                        width="64">
+                    <div class="logo-text">Bandcamp</div>
+                </a>
 
                 <a href="https://hellquist.myspreadshop.net/" target="_blank" class="logo-container">
-                    <img src="img/logos/hellquist_merch.png" class="logo" height="64" width="64"><div class="logo-text">Merch</div></a>
+                    <img src="img/logos/hellquist_merch.png" class="logo" height="64" width="64">
+                    <div class="logo-text">Merch</div>
+                </a>
 
                 <a href="https://facebook.com/hellquistmusic" target="_blank" class="logo-container">
-                    <img src="img/logos/f_logo_RGB-White_58.png" class="logo" height="64" width="64"><div class="logo-text">Facebook</div></a>
+                    <img src="img/logos/f_logo_RGB-White_58.png" class="logo" height="64" width="64">
+                    <div class="logo-text">Facebook</div>
+                </a>
 
                 <a href="https://instagram.com/HellquistMusic" target="_blank" class="logo-container">
-                    <img src="img/logos/circle_instagram_icon.png" class="logo" height="64" width="64"><div class="logo-text">Instagram</div></a>
+                    <img src="img/logos/circle_instagram_icon.png" class="logo" height="64" width="64">
+                    <div class="logo-text">Instagram</div>
+                </a>
 
                 <a href="https://youtube.com/hellquistens" target="_blank" class="logo-container">
-                    <img src="img/logos/youtube_social_circle_white.png" class="logo" height="64" width="64"><div class="logo-text">YouTube</div></a>
-
+                    <img src="img/logos/youtube_social_circle_white.png" class="logo" height="64" width="64">
+                    <div class="logo-text">YouTube</div>
+                </a>
 
             </div>
 
@@ -53,5 +68,14 @@
     </div>
 
 </body>
+<script>
+    const user = 'hellquistmusic';
+    const site = 'gmail.com';
+    const contactDiv = document.querySelector('.contact');
+    if (contactDiv) {
+        const emailLink = `<a href="mailto:${user}@${site}">${user}@${site}</a>`;
+        contactDiv.innerHTML = emailLink;
+    }
+</script>
 
 </html>
